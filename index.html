@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>S&H Legacy Group</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      background-color: #d6d4cb;
+      color: #2b2b2b;
+    }
+    header {
+      text-align: center;
+      padding: 2rem 1rem 1rem;
+      position: relative;
+    }
+    nav {
+      position: absolute;
+      top: 4.5rem;
+      right: 2.5rem;
+      display: flex;
+      align-items: center;
+      height: 100%;
+    }
+    nav a {
+      margin-left: 2rem;
+      text-decoration: none;
+      color: #2b2b2b;
+      font-weight: 500;
+      font-size: 1rem;
+    }
+    .logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+    .logo img {
+      max-width: 340px;
+      height: auto;
+    }
+    .section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 4rem;
+      padding: 4rem 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .founders-block {
+      text-align: center;
+    }
+    .founders-image {
+      width: 330px;
+      height: auto;
+      border-radius: 12px;
+    }
+    .company-text {
+      max-width: 450px;
+      text-align: center;
+    }
+    h1, h2, h3 {
+      font-weight: normal;
+      color: #4d2c1d;
+      margin-top: 0;
+    }
+    h2 {
+      font-size: 2rem;
+    }
+    .contact-section {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 4rem;
+      padding: 4rem 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .contact-info {
+      max-width: 400px;
+      flex: 1;
+    }
+    form {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+    }
+    form input, form textarea {
+      padding: 0.8rem 1rem;
+      border-radius: 20px;
+      border: 1px solid #aaa;
+      font-family: inherit;
+      font-size: 1rem;
+    }
+    form textarea {
+      resize: vertical;
+    }
+    button {
+      width: fit-content;
+      padding: 0.6rem 1.5rem;
+      border-radius: 20px;
+      background-color: #1c2a36;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+    footer {
+      border-top: 1px solid #2b2b2b;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding: 2rem 4rem;
+    }
+    footer div {
+      margin: 1rem 0;
+    }
+    @media (max-width: 768px) {
+      .section, .contact-section, footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      nav {
+        position: static;
+        margin-top: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="https://tylersearle03.github.io/legacy-site/assets/logo.png" alt="S&H Legacy Group Logo">
+    </div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <hr style="margin-top: -1.2rem; margin-bottom: 0; border: none; border-top: 1px solid #444;">
+  </header>
+
+  <section class="section" id="about">
+    <div class="founders-block">
+      <h2 style="margin-bottom: 0.4rem;">Meet our Founders</h2>
+      <p style="margin-top: 0;">Trevor Hataway & Tyler Searle</p>
+      <img src="https://tylersearle03.github.io/legacy-site/assets/founders.jpeg" alt="Founders" class="founders-image">
+    </div>
+    <div class="company-text">
+      <h2>About our Company</h2>
+      <p>
+        Our mission is to operate at the intersection of apparel, real estate development,
+        and sound engineering by delivering value through clothing resale, brand development,
+        retail innovation, and professional audio production. We aim to build a diverse,
+        future-focused enterprise driven by quality, creativity, and strategic growth.
+      </p>
+    </div>
+  </section>
+
+  <section class="contact-section" id="contact">
+    <div class="contact-info">
+      <h2>Contact Us</h2>
+      <p>tyler@s&hgroup.com / trevor@s&hgroup.com</p>
+      <p>Interested in working together? Fill out some info and we will be in touch shortly. We can't wait to hear from you!</p>
+    </div>
+    <form>
+      <div style="display: flex; gap: 1rem;">
+        <input type="text" placeholder="First Name" required style="flex: 1">
+        <input type="text" placeholder="Last Name" required style="flex: 1">
+      </div>
+      <input type="email" placeholder="Email" required>
+      <textarea rows="4" placeholder="Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <div>
+      <strong>S&H Legacy Group, LLC</strong>
+    </div>
+    <div>
+      <strong>Contact</strong><br>
+      4507 Legend Trail, New Braunfels, TX 78130<br>
+      <a href="mailto:email@example.com">email@example.com</a><br>
+      (409) 658-3496
+    </div>
+  </footer>
+</body>
+</html>
+
